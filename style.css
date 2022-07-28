@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
+.navbar .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: aquamarine;
+  height: 2px;
+  animation: appear 0.3s linear;
+}
+.jumbotron {
+  color: white;
+  background-image: url("img/background.jpg");
+}
+
+.btn.btn-outline-success {
+  border-color: aquamarine;
+  color: black;
+}
+.btn.btn-outline-success:hover {
+  background-color: rgb(19, 18, 18);
+  color: white;
+  font-weight: lighter;
+}
+.contact {
+  color: white;
+}
+
+.contact .btn.btn-outline-success:hover {
+  background-color: white;
+  color: black !important;
+}
+.social .container .row.mb-5 {
+  margin-left: 20%;
+}
+section {
+  padding: 2rem;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social .container .row.mb-5 {
+    margin-left: 50%;
+  }
+}
