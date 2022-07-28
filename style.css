@@ -31,7 +31,7 @@ html {
   width: 100%;
   background-color: aquamarine;
   height: 2px;
-  animation: appear 0.3s linear;
+  animation: appear 0.4s linear;
 }
 .jumbotron {
   color: white;
