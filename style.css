@@ -1,6 +1,15 @@
 body {
+  font-family: "Poppins";
+}
+.about {
+  background-image: linear-gradient(black, #9bc5c3);
+}
+.projects {
+  background-image: linear-gradient(#9bc5c3, black);
+}
+.contact,
+.footer {
   background-color: black;
-  font-family: "Roboto Mono", monospace;
 }
 
 html {
@@ -16,6 +25,9 @@ html {
   .navbar .navbar-nav .nav-item {
     margin: 0 1em;
   }
+}
+.navbar {
+  background-color: black;
 }
 .navbar .nav-item .nav-link {
   position: relative;
@@ -35,7 +47,14 @@ html {
 }
 .jumbotron {
   color: white;
+  background-color: black !important;
   background-image: url("img/background.jpg");
+
+  height: 35rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn.btn-outline-success {
@@ -61,6 +80,7 @@ html {
 section {
   padding: 2rem;
 }
+
 @keyframes appear {
   from {
     width: 0;

@@ -13,7 +13,9 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -45,8 +47,8 @@
     <!-- End of Navbar -->
 
     <!-- Home -->
-    <section class="jumbotron text-center" style="margin-top: 10%">
-      <h1 class="display-4 mt-4" data-aos="fade-in" data-aos-duration="1000">H E L L O !</h1>
+    <section class="jumbotron text-center" style="margin-top: 4%">
+      <h1 class="display-4 mt-5" data-aos="fade-in" data-aos-duration="1000">H E L L O !</h1>
 
       <h1 class="lead" style="color: grey; margin-top: 10%" data-aos="flip-right" data-aos-duration="1000">I'm a</h1>
       <!-- <p class="lead" data-aos="flip-left" data-aos-duration="1000">Software Engineer || <span style="color: aquamarine; font-weight: bolder">Website Developer</span></p> -->
@@ -55,12 +57,12 @@
         <div class="developer" style="color: aquamarine; display: inline-block"></div>
       </div>
       <hr class="my-4" />
-      <p style="margin-top: 7%" data-aos="zoom-in" data-aos-once="true">Enthusiastic | <span style="color: aquamarine">Adaptable</span> | Diligent</p>
+      <p style="margin-top: 7%" data-aos="zoom-in" data-aos-once="true" data-aos-offset="205">Enthusiastic | <span style="color: aquamarine">Adaptable</span> | Diligent</p>
     </section>
     <!-- End of Home -->
 
     <!-- About -->
-    <section class="about mt-5" id="about" style="margin-top: 3%; color: white">
+    <section class="about" id="about" style="color: white">
       <div class="container" data-aos="fade-down" data-aos-offset="300">
         <div class="row text-center">
           <div class="col-lg">
@@ -87,7 +89,7 @@
     </section>
     <!-- End of About -->
     <!-- Projects -->
-    <section class="mt-5" id="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -130,14 +132,14 @@
     </section>
     <!-- End of Projects -->
     <!-- Contact -->
-    <section class="contact mt-5 mb-5" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <div class="display-5 fw-bold">Contact Me</div>
+            <div class="display-5 fw-bold text-white">Contact Me</div>
           </div>
         </div>
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5t text-white">
           <div class="col md-8">
             <div class="alert alert-success alert-dismissible fade show d-none success-alert" role="alert">
               <strong>Thank You!</strong> Your message has been sent successfully!.
@@ -157,7 +159,7 @@
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="3" placeholder="Type Your Message Here" required></textarea>
               </div>
-              <button type="submit" class="btn btn-outline-success btn-send" name="submit" style="color: white">Submit</button>
+              <button type="submit" class="btn btn-outline-success btn-send text-white" name="submit">Submit</button>
 
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -170,27 +172,26 @@
     </section>
     <!-- End of Contact -->
 
-    <!-- Social Media -->
-    <div class="social" data-aos="fade-up">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4 mb-3">
-            <a href="https://www.instagram.com/joanandreas/"><i class="bi bi-instagram" style="color: aquamarine; font-size: 2rem"></i></a>
-          </div>
-          <div class="col-md-4 mb-3">
-            <a href="https://github.com/joan2305"><i class="bi bi-github" style="color: aquamarine; font-size: 2rem"></i></a>
-          </div>
-          <div class="col-md-4 mb-3">
-            <a href="https://www.linkedin.com/in/joan-andreas-bb3091208/"><i class="bi bi-linkedin" style="color: aquamarine; font-size: 2rem"></i></a>
-          </div>
+    <!-- Footer -->
+    <div class="footer text-center d-flex justify-content-center" data-aos="fade-up" data-aos-offset="0">
+      <div class="created-by mt-1">
+        <p class="text-white">
+          Created with <i class="bi bi-heart text-danger"></i> by <a href="https://www.instagram.com/joanandreas/" style="color: aquamarine" class="fw-bold text-decoration-none"> Joan Andreas </a><span>| @joanandreas875@gmail.com</span>
+        </p>
+      </div>
+      <div class="social d-flex">
+        <div class="col-md-4 mb-3 ms-3">
+          <a href="https://www.instagram.com/joanandreas/"><i class="bi bi-instagram" style="color: aquamarine; font-size: 1.5rem"></i></a>
+        </div>
+
+        <div class="col-md-4 mb-3 ms-3">
+          <a href="https://github.com/joan2305"><i class="bi bi-github" style="color: aquamarine; font-size: 1.5rem"></i></a>
+        </div>
+
+        <div class="col-md-4 mb-3 ms-3">
+          <a href="https://www.linkedin.com/in/joan-andreas-bb3091208/"><i class="bi bi-linkedin" style="color: aquamarine; font-size: 1.5rem"></i></a>
         </div>
       </div>
-    </div>
-    <!-- End of Social Media -->
-
-    <!-- Footer -->
-    <div class="footer text-center" data-aos="fade-up" data-aos-offset="0">
-      <p class="text-white">Created with <i class="bi bi-heart text-danger"></i> by <a href="https://www.instagram.com/joanandreas/" style="color: aquamarine" class="fw-bold text-decoration-none"> Joan Andreas</a></p>
     </div>
     <!-- End of Footer -->
 
