@@ -26,6 +26,7 @@ html {
     margin: 0 1em;
   }
 }
+
 .navbar {
   background-color: black;
 }
@@ -50,7 +51,6 @@ html {
   background-color: black !important;
   background-image: url("img/background.jpg");
 
-  height: 35rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
