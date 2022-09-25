@@ -42,7 +42,7 @@ html {
   right: 0;
   margin: 0 auto;
   width: 100%;
-  background-color: aquamarine;
+  background-color: antiquewhite;
   height: 2px;
   animation: appear 0.4s linear;
 }
@@ -69,7 +69,10 @@ html {
 .contact {
   color: white;
 }
-
+.btn.btn-loading {
+  background-color: black;
+  border-color: wheat;
+}
 .contact .btn.btn-outline-success:hover {
   background-color: white;
   color: black !important;
