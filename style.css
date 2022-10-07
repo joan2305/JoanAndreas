@@ -7,7 +7,12 @@ body {
 .projects {
   background-image: linear-gradient(#9bc5c3, black);
 }
-.contact,
+.certificates {
+  background-image: linear-gradient(black, #9bc5c3);
+}
+.contact {
+  background-image: linear-gradient(#9bc5c3, black);
+}
 .footer {
   background-color: black;
 }
@@ -79,6 +84,79 @@ html {
 }
 .social .container .row.mb-5 {
   margin-left: 20%;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slides {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: aquamarine;
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.actives,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slides img {
+  transition: transform 0.4s;
+}
+.slides img:hover {
+  transform: scale(1.15);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 section {
   padding: 2rem;

@@ -41,6 +41,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -88,7 +91,7 @@
               <span style="color: aquamarine">Education <br /></span>Bina Nusantara University Majoring in Computer Science
             </p>
             <p class="text-center">
-              <span style="color: aquamarine">GPA <br /></span>3.8
+              <span style="color: aquamarine">GPA <br /></span>3.84
             </p>
           </div>
         </div>
@@ -140,6 +143,34 @@
       </div>
     </section>
     <!-- End of Projects -->
+
+    <!-- Certificates -->
+    <div class="certificates" id="certificates">
+      <div class="container" data-aos="fade-down" data-aos-offset="300">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="display-5 fw-bold" style="color: white; margin-top: 7%">Certificates</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow-container mt-5">
+        <div class="slides fade-animation">
+          <a href="https://www.coursera.org/account/accomplishments/certificate/LNEXF7DCSPCR">
+            <img src="img/certificates/yonsei.jpg" style="display: block; width: 50%" class="me-auto ms-auto" />
+          </a>
+          <div class="fst-italic text mt-4 fw-bold">Coursera Yonsei Korean Beginner Certificate</div>
+        </div>
+        <div class="slides fade-animation">
+          <a href="https://www.freecodecamp.org/certification/fccc8536658-5e53-4cbe-b937-18d96686482e/data-analysis-with-python-v7">
+            <img src="img/certificates/fcc_dataanalysis.png" style="display: block; width: 50%" class="me-auto ms-auto" />
+          </a>
+          <div class="fst-italic text mt-4 fw-bold">Free Code Camp Data Analysis with Python Certificate</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <!-- End of Certificates -->
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container">
@@ -253,6 +284,53 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+
+    <!-- Slider Script -->
+    <script>
+      let sIndex = 0;
+      autoSlides();
+
+      function autoSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        sIndex++;
+        if (sIndex > slides.length) {
+          sIndex = 1;
+        }
+        slides[sIndex - 1].style.display = "block";
+        setTimeout(autoSlides, 3000); // Change image every 2 seconds
+      }
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
     </script>
   </body>
 </html>
