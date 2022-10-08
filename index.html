@@ -59,9 +59,10 @@
       <h1 class="lead" style="color: grey; margin-top: 10%" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">I'm a</h1>
       <!-- <p class="lead" data-aos="flip-left" data-aos-duration="1000">Software Engineer || <span style="color: aquamarine; font-weight: bolder">Website Developer</span></p> -->
       <div class="text justify-content-center d-flex">
-        <div class="position"></div>
+        <!-- <div class="software-engineer" style="display: inline-block"></div> -->
+        <div class="developer1" style="color: white; display: inline-block"></div>
         <div class="developer" style="color: aquamarine; display: inline-block"></div>
-        <div class="data-analyst"></div>
+        <div class="data-analyst" style="color: white; display: inline-block"></div>
       </div>
       <hr class="my-4" />
       <p style="margin-top: 7%" data-aos="zoom-in" data-aos-once="true" data-aos-offset="205">Enthusiastic | <span style="color: aquamarine">Adaptable</span> | Diligent</p>
@@ -145,7 +146,7 @@
     <!-- End of Projects -->
 
     <!-- Certificates -->
-    <div class="certificate" id="certificates">
+    <div class="certificates" id="certificates">
       <div class="container" data-aos="fade-down" data-aos-offset="300">
         <div class="row text-center">
           <div class="col">
@@ -250,8 +251,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+
     <script>
-      gsap.to(".position", { duration: 1, delay: 1, text: "Software Engineer |" });
+      gsap.to(".developer1", { duration: 1, delay: 1, text: "Software Engineer |" });
       gsap.to(".developer", { duration: 1, delay: 1.5, text: "| Full-Stack Developer |" });
       gsap.to(".data-analyst", { duration: 1, delay: 2, text: "| Data Analyst Enthusiast" });
     </script>
