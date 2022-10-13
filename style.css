@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins";
+  overflow-x: hidden;
 }
 .about {
   background-image: linear-gradient(black, #34495e);
@@ -63,14 +64,51 @@ html {
 }
 
 .btn-project {
-  background-color: #34495e;
-  color: beige;
+  background-color: transparent;
+  border-color: #34495e;
+  color: #34495e;
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 black;
 }
 .btn-project:hover {
-  background-color: beige;
-  color: #34495e;
-  font-weight: normal;
-  border-color: beige;
+  box-shadow: inset 300px 0 0 0 black;
+  color: blanchedalmond;
+  border-color: blanchedalmond;
+}
+
+.btn-skills {
+  background-color: var(--background-color);
+  color: #222;
+  font-weight: 550;
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #e3e3e3;
+  --border-size: 2px;
+  --accent-color: blanchedalmond;
+}
+.btn-skills::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: var(--accent-color);
+  transition: transform 300ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+.btn-skills:hover::before,
+.btn-skills:focus::before {
+  transform: scaleX(1);
+}
+.btn-skills:hover {
+  color: beige;
 }
 .contact {
   color: white;
@@ -86,69 +124,16 @@ html {
 .social .container .row.mb-5 {
   margin-left: 20%;
 }
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.slides {
-  display: none;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-  color: beige;
-}
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.actives,
-.dot:hover {
-  background-color: #717171;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.slides img {
+
+.carousel-item img {
   transition: transform 0.4s;
 }
-.slides img:hover {
+.carousel-item img:hover {
   transform: scale(1.15);
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
 }
 
 @keyframes fade {
