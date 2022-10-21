@@ -356,6 +356,17 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
+              <img src="img/projects/todo.png" class="card-img-top" alt="Project1" />
+              <div class="card-body">
+                <h5 class="card-title">To-Do-List Web</h5>
+                <span class="badge badge-primary mb-2" style="background-color: black; color: blanchedalmond">2022</span>
+                <p class="card-text">To-Do-List app website using vue.js.</p>
+                <a href="https://github.com/joan2305/To-Do-App" class="btn btn-project mb-1" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="container mt-3">
           <a href="https://public.tableau.com/app/profile/joan.andreas5894" target="_blank" class="btn btn-skills">My Tableau Dashboards</a>
@@ -490,57 +501,57 @@
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-      const toastTrigger = document.getElementById("liveToastBtn");
-      const toastLiveExample = document.getElementById("liveToast");
+      AOS.init()
+      const toastTrigger = document.getElementById("liveToastBtn")
+      const toastLiveExample = document.getElementById("liveToast")
       if (toastTrigger) {
         toastTrigger.addEventListener("click", () => {
-          const toast = new bootstrap.Toast(toastLiveExample);
+          const toast = new bootstrap.Toast(toastLiveExample)
 
-          toast.show();
-        });
+          toast.show()
+        })
       }
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
 
     <script>
-      gsap.to(".developer1", { duration: 1, delay: 1, text: "Software Engineer |" });
-      gsap.to(".developer", { duration: 1, delay: 1.5, text: "| Full-Stack Developer |" });
-      gsap.to(".data-analyst", { duration: 1, delay: 2, text: "| Data Analyst Enthusiast" });
+      gsap.to(".developer1", { duration: 1, delay: 1, text: "Software Engineer |" })
+      gsap.to(".developer", { duration: 1, delay: 1.5, text: "| Full-Stack Developer |" })
+      gsap.to(".data-analyst", { duration: 1, delay: 2, text: "| Data Analyst Enthusiast" })
     </script>
 
     <script>
-      const items = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
+      const items = document.querySelectorAll(".navbar-nav .nav-item .nav-link")
       items.forEach((item) => {
         item.addEventListener("click", () => {
-          document.querySelector(".nav-link.active").classList.remove("active");
-          item.classList.add("active");
-        });
-      });
+          document.querySelector(".nav-link.active").classList.remove("active")
+          item.classList.add("active")
+        })
+      })
 
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyg2PMzQvOX1TJoFV7TYE4VkkrLSJ4Jrz3F-K_t0ZXkT1Tt2MnJVeo5kBTm1qQCwA/exec";
-      const form = document.forms["response-contact-form"];
-      const btnSend = document.querySelector(".btn-send");
-      const btnLoading = document.querySelector(".btn-loading");
-      const successAlert = document.querySelector(".success-alert");
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyg2PMzQvOX1TJoFV7TYE4VkkrLSJ4Jrz3F-K_t0ZXkT1Tt2MnJVeo5kBTm1qQCwA/exec"
+      const form = document.forms["response-contact-form"]
+      const btnSend = document.querySelector(".btn-send")
+      const btnLoading = document.querySelector(".btn-loading")
+      const successAlert = document.querySelector(".success-alert")
       form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle("d-none");
-        btnSend.classList.toggle("d-none");
+        e.preventDefault()
+        btnLoading.classList.toggle("d-none")
+        btnSend.classList.toggle("d-none")
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnSend.classList.toggle("d-none");
-            successAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
+            btnLoading.classList.toggle("d-none")
+            btnSend.classList.toggle("d-none")
+            successAlert.classList.toggle("d-none")
+            form.reset()
+            console.log("Success!", response)
           })
-          .catch((error) => console.error("Error!", error.message));
-      });
+          .catch((error) => console.error("Error!", error.message))
+      })
     </script>
   </body>
 </html>
